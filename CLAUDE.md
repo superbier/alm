@@ -15,7 +15,7 @@ Niko pflegt die Seite per Chat-Anweisung. Änderungen klein halten, nichts erfin
 
 ## Design (Richtung „E · Glut“)
 - Schwarz, Akzente Rot → Orange → Bernstein → Gelb (`--red`, `--orange`, `--amber`, `--yellow`).
-- Schrift: Helvetica (Neue) Bold, eng gesetzt (`--tight: -0.06em` für große Überschriften).
+- Schrift: Inter Tight (selbst gehostet über @fontsource-variable), Überschriften im Schnitt 900 (`--heavy`), eng gesetzt (`--tight`).
 - Große Bereichstitel ohne Punkt; kleine Navigation mit Punkt („Home.“).
 - Listen als Haarlinien-Zeilen: links Datum, rechts Inhalt.
 

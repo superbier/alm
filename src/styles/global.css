@@ -13,8 +13,9 @@
   --amber: #ff9a1a;
   --yellow: #ffc21a;
 
-  --font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --tight: -0.06em;
+  --font: 'Inter Tight Variable', 'Inter Tight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --heavy: 900;   /* Überschriften */
+  --tight: -0.05em;
   --max: 1280px;
   --pad: clamp(20px, 5vw, 64px);
 }
@@ -58,12 +59,12 @@ a:focus-visible { outline: 2px solid var(--yellow); outline-offset: 3px; }
 .hero { display: flex; flex-wrap: wrap; align-items: center; gap: 48px; padding: clamp(56px, 9vw, 128px) 0; }
 .hero__text { flex: 999 1 520px; min-width: 0; }
 .hero__name {
-  margin: 0 0 clamp(40px, 6vw, 72px); color: var(--white); font-weight: 700;
+  margin: 0 0 clamp(40px, 6vw, 72px); color: var(--white); font-weight: var(--heavy);
   font-size: clamp(56px, 8vw, 104px); line-height: 0.95; letter-spacing: var(--tight);
 }
 .hero__links { display: flex; flex-direction: column; gap: 4px; }
 .hero__links a {
-  align-self: flex-start; text-decoration: none; font-weight: 700;
+  align-self: flex-start; text-decoration: none; font-weight: var(--heavy);
   font-size: clamp(48px, 7vw, 96px); line-height: 1.04; letter-spacing: var(--tight);
 }
 .hero__portrait { flex: 1 1 320px; max-width: 480px; display: block; }
@@ -78,7 +79,7 @@ a:focus-visible { outline: 2px solid var(--yellow); outline-offset: 3px; }
 .section { border-top: 1px solid var(--line); padding: 32px 0 clamp(64px, 8vw, 112px); }
 .section__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 40px; }
 .section__title {
-  margin: 0; font-weight: 700; font-size: clamp(44px, 6vw, 80px); letter-spacing: var(--tight); line-height: 1;
+  margin: 0; font-weight: var(--heavy); font-size: clamp(44px, 6vw, 80px); letter-spacing: var(--tight); line-height: 1;
 }
 .section__head .more { font-size: 16px; font-weight: 700; }
 
@@ -110,7 +111,7 @@ a.row:hover .row__title { color: var(--amber); }
   padding: 28px; background: var(--surface); color: var(--text); text-decoration: none;
 }
 .book__role { font-size: 14px; font-weight: 700; color: var(--orange); }
-.book__title { display: block; font-size: 34px; font-weight: 700; letter-spacing: -0.045em; line-height: 1.05; color: var(--white); }
+.book__title { display: block; font-size: 34px; font-weight: var(--heavy); letter-spacing: -0.04em; line-height: 1.05; color: var(--white); }
 .book__sub { display: block; margin-top: 8px; font-size: 17px; color: var(--soft); }
 .book:hover .book__title { color: var(--orange); }
 .after { margin: 24px 0 0; font-size: 16px; font-weight: 700; }
