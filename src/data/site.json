@@ -1,0 +1,53 @@
+{
+  "name": "Niko Alm",
+  "substack": "https://ohnebekenntnis.substack.com/",
+  "email": "niko@alm.at",
+  "nav": [
+    { "label": "Home.", "href": "/" },
+    { "label": "Über Alm.", "href": "/#ueber" },
+    { "label": "Publikationen.", "href": "/#publikationen" },
+    { "label": "Presse.", "href": "/#presse" }
+  ],
+  "heroLinks": [
+    { "label": "Newsletter", "href": "https://ohnebekenntnis.substack.com/", "color": "red" },
+    { "label": "Publikationen", "href": "/#publikationen", "color": "orange" },
+    { "label": "Average", "href": "https://www.average.media/", "color": "amber" },
+    { "label": "Schmaltz", "href": "http://schmaltz.at/", "color": "yellow" }
+  ],
+  "intro": "Medienunternehmer, Publizist, Ex-Abgeordneter. Fotogene Schale, nerdiger Kern.",
+  "timeline": [
+    { "when": "seit 2021", "what": "Average – Strategie, Konzept, Kampagne. Mit Yannick Gotthardt." },
+    { "when": "seit 2012", "what": "Schmaltz – Beteiligungen als Nano Business Angel." },
+    { "when": "2017–2020", "what": "Geschäftsführer Addendum." },
+    { "when": "2013–2017", "what": "Abgeordneter zum Nationalrat, NEOS." },
+    { "when": "2006–2016", "what": "VICE Alps, VICE CEE." },
+    { "when": "2001", "what": "Gründung Super-Fi." }
+  ],
+  "books": [
+    {
+      "role": "Autor · Residenz 2019",
+      "title": "Ohne Bekenntnis",
+      "subtitle": "Wie mit Religion Politik gemacht wird",
+      "href": "https://alm.net/publikationen/"
+    },
+    {
+      "role": "Herausgeber · Springer Gabler 2022",
+      "title": "Die digitale Transformation der Medien",
+      "subtitle": "Leitmedien im Wandel",
+      "href": "https://alm.net/publikationen/"
+    }
+  ],
+  "press": [
+    { "date": "Feb 2025", "title": "„Die Tagespresse“ und das OGH-Urteil: Die Kunst der Täuschung", "outlet": "Die Presse", "href": "" },
+    { "date": "Nov 2024", "title": "Wem es nicht gefällt, kann gehen. Wem es doch gefällt, darf auch wieder zurückkommen", "outlet": "Die Presse", "href": "" },
+    { "date": "Apr 2024", "title": "Die ÖVP will über Leitkultur reden. Na gut, reden wir darüber!", "outlet": "Der Standard", "href": "" },
+    { "date": "Okt 2023", "title": "Eine epochale Zäsur im Verhältnis Kirche und Staat", "outlet": "Die Presse", "href": "" }
+  ],
+  "socials": [
+    { "label": "Substack", "href": "https://ohnebekenntnis.substack.com/" },
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/nikoalm/" },
+    { "label": "Instagram", "href": "https://instagram.com/nikoalm" },
+    { "label": "X", "href": "https://x.com/NikoAlm" },
+    { "label": "Wikipedia", "href": "https://de.wikipedia.org/wiki/Niko_Alm" }
+  ]
+}

@@ -1,0 +1,49 @@
+---
+import '../styles/global.css';
+import site from '../data/site.json';
+
+interface Props { title?: string; description?: string }
+const {
+  title = site.name,
+  description = 'Niko Alm – Medienunternehmer, Publizist, Ex-Abgeordneter.',
+} = Astro.props;
+---
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site-header">
+        <nav class="site-nav" aria-label="Hauptnavigation">
+          {site.nav.map((n) => <a href={n.href}>{n.label}</a>)}
+        </nav>
+        <a class="pill pill--solid" href={site.substack}>Newsletter abonnieren</a>
+      </header>
+
+      <main>
+        <slot />
+      </main>
+
+      <footer class="site-footer" id="kontakt">
+        <div>
+          <h2 class="section__title c-yellow">Kontakt</h2>
+          <a class="mail" href={`mailto:${site.email}`}>{site.email.replace('@', '[at]')}</a>
+        </div>
+        <nav class="socials" aria-label="Profile">
+          {site.socials.map((s) => <a href={s.href}>{s.label}</a>)}
+          <a href="/impressum">Impressum</a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

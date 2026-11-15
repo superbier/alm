@@ -1,0 +1,70 @@
+---
+import Base from '../layouts/Base.astro';
+import site from '../data/site.json';
+---
+<Base>
+  <section class="hero" id="top">
+    <div class="hero__text">
+      <h1 class="hero__name">{site.name}</h1>
+      <div class="hero__links">
+        {site.heroLinks.map((l) => <a class={`c-${l.color}`} href={l.href}>{l.label}</a>)}
+      </div>
+    </div>
+    <div class="hero__portrait">[Porträt folgt – s/w, läuft ins Schwarz aus]</div>
+  </section>
+
+  <section class="section" id="ueber">
+    <div class="section__head">
+      <h2 class="section__title c-red">Über Alm</h2>
+    </div>
+    <div class="about">
+      <p class="about__intro">{site.intro}</p>
+      <div class="about__list rows">
+        {site.timeline.map((t) => (
+          <div class="row"><span class="row__when">{t.when}</span><span>{t.what}</span></div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="publikationen">
+    <div class="section__head">
+      <h2 class="section__title c-orange">Publikationen</h2>
+    </div>
+    <div class="books">
+      {site.books.map((b) => (
+        <a class="book" href={b.href}>
+          <span class="book__role">{b.role}</span>
+          <span>
+            <span class="book__title">{b.title}</span>
+            <span class="book__sub">{b.subtitle}</span>
+          </span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="section" id="presse">
+    <div class="section__head">
+      <h2 class="section__title c-amber">Presse</h2>
+      <a class="more" href="https://alm.net/presse/">Kurzbio &amp; Pressefotos</a>
+    </div>
+    <div class="rows">
+      {site.press.map((p) => {
+        const inner = (
+          <>
+            <span class="row__when">{p.date}</span>
+            <span class="row__body">
+              <span class="row__title">{p.title}</span>
+              <span class="row__meta">{p.outlet}</span>
+            </span>
+          </>
+        );
+        return p.href
+          ? <a class="row row--press" href={p.href}>{inner}</a>
+          : <div class="row row--press">{inner}</div>;
+      })}
+    </div>
+    <a class="pill pill--outline" href="https://alm.net/presse/">Alle Gastkommentare &amp; Interviews</a>
+  </section>
+</Base>
