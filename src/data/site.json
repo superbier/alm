@@ -2,18 +2,6 @@
   "name": "Niko Alm",
   "substack": "https://ohnebekenntnis.substack.com/",
   "email": "niko@alm.at",
-  "nav": [
-    { "label": "Home.", "href": "/" },
-    { "label": "Über Alm.", "href": "/#ueber" },
-    { "label": "Publikationen.", "href": "/#publikationen" },
-    { "label": "Presse.", "href": "/#presse" }
-  ],
-  "heroLinks": [
-    { "label": "Newsletter", "href": "https://ohnebekenntnis.substack.com/", "color": "red" },
-    { "label": "Publikationen", "href": "/#publikationen", "color": "orange" },
-    { "label": "Average", "href": "https://www.average.media/", "color": "amber" },
-    { "label": "Schmaltz", "href": "http://schmaltz.at/", "color": "yellow" }
-  ],
   "intro": "Medienunternehmer, Publizist, Ex-Abgeordneter. Fotogene Schale, nerdiger Kern.",
   "timeline": [
     { "when": "seit 2021", "what": "Average – Strategie, Konzept, Kampagne. Mit Yannick Gotthardt." },
@@ -23,6 +11,20 @@
     { "when": "2006–2016", "what": "VICE Alps, VICE CEE." },
     { "when": "2001", "what": "Gründung Super-Fi." }
   ],
+  "newsletter": {
+    "text": "Ohne Bekenntnis – der Newsletter auf Substack.",
+    "cta": "Newsletter abonnieren"
+  },
+  "average": {
+    "text": "Im Herbst 2021 gemeinsam mit Yannick Gotthardt gegründet: Strategieentwicklung, Unternehmensberatung, Micro Think Tank, Konzeptbureau und Kampagneneinheit für Unternehmen, Institutionen, Medien und politische Organisationen.",
+    "href": "https://www.average.media/",
+    "cta": "average.media"
+  },
+  "schmaltz": {
+    "text": "Über die 2012 gegründete Schmaltz GmbH hält Niko Alm als Nano Business Angel Beteiligungen an rund zehn Unternehmen.",
+    "href": "http://schmaltz.at/",
+    "cta": "schmaltz.at"
+  },
   "books": [
     {
       "role": "Autor · Residenz 2019",
@@ -43,6 +45,7 @@
     { "date": "Apr 2024", "title": "Die ÖVP will über Leitkultur reden. Na gut, reden wir darüber!", "outlet": "Der Standard", "href": "" },
     { "date": "Okt 2023", "title": "Eine epochale Zäsur im Verhältnis Kirche und Staat", "outlet": "Die Presse", "href": "" }
   ],
+  "texts": [],
   "socials": [
     { "label": "Substack", "href": "https://ohnebekenntnis.substack.com/" },
     { "label": "LinkedIn", "href": "https://www.linkedin.com/in/nikoalm/" },

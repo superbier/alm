@@ -1,73 +1,134 @@
 ---
 import Base from '../layouts/Base.astro';
 import site from '../data/site.json';
+
+const arrow = '<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg>';
 ---
 <Base>
   <section class="hero" id="top">
     <div class="hero__text">
-      <h1 class="hero__name">{site.name}</h1>
-      <div class="hero__links">
-        {site.heroLinks.map((l) => <a class={`c-${l.color}`} href={l.href}>{l.label}</a>)}
+
+      <!-- Name: klappt „Über Alm“ auf -->
+      <details class="fold fold--name" name="bereich" id="ueber">
+        <summary class="fold__head hero__name">{site.name}</summary>
+        <div class="fold__body">
+          <p class="about__intro">{site.intro}</p>
+          <div class="rows">
+            {site.timeline.map((t) => (
+              <div class="row"><span class="row__when">{t.when}</span><span>{t.what}</span></div>
+            ))}
+          </div>
+        </div>
+      </details>
+
+      <div class="hero__list">
+        <details class="fold" name="bereich" id="newsletter">
+          <summary class="fold__head fold__head--big c-red">Newsletter</summary>
+          <div class="fold__body">
+            <p class="fold__text">{site.newsletter.text}</p>
+            <a class="pill pill--solid" href={site.substack}>{site.newsletter.cta}</a>
+          </div>
+        </details>
+
+        <details class="fold" name="bereich" id="publikationen">
+          <summary class="fold__head fold__head--big c-orange">Publikationen</summary>
+          <div class="fold__body">
+            <div class="books">
+              {site.books.map((b) => (
+                <a class="book" href={b.href}>
+                  <span class="book__role">{b.role}</span>
+                  <span>
+                    <span class="book__title">{b.title}</span>
+                    <span class="book__sub">{b.subtitle}</span>
+                  </span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </details>
+
+        <details class="fold" name="bereich" id="average">
+          <summary class="fold__head fold__head--big c-amber">Average</summary>
+          <div class="fold__body">
+            <p class="fold__text">{site.average.text}</p>
+            <a class="link-out" href={site.average.href}>{site.average.cta} <Fragment set:html={arrow} /></a>
+          </div>
+        </details>
+
+        <details class="fold" name="bereich" id="schmaltz">
+          <summary class="fold__head fold__head--big c-yellow">Schmaltz</summary>
+          <div class="fold__body">
+            <p class="fold__text">{site.schmaltz.text}</p>
+            <a class="link-out" href={site.schmaltz.href}>{site.schmaltz.cta} <Fragment set:html={arrow} /></a>
+          </div>
+        </details>
+
+        <div class="hero__minor">
+          <details class="fold" name="bereich" id="presse">
+            <summary class="fold__head fold__head--small">Presse</summary>
+            <div class="fold__body">
+              <div class="rows">
+                {site.press.map((p) => {
+                  const inner = (
+                    <>
+                      <span class="row__when">{p.date}</span>
+                      <span class="row__body">
+                        <span class="row__title">{p.title}</span>
+                        <span class="row__meta">{p.outlet}</span>
+                      </span>
+                    </>
+                  );
+                  return p.href
+                    ? <a class="row row--press" href={p.href}>{inner}</a>
+                    : <div class="row row--press">{inner}</div>;
+                })}
+              </div>
+              <a class="pill pill--outline" href="https://alm.net/presse/">Alle Gastkommentare &amp; Interviews, Kurzbio &amp; Pressefotos</a>
+            </div>
+          </details>
+
+          <details class="fold" name="bereich" id="texte">
+            <summary class="fold__head fold__head--small">Texte</summary>
+            <div class="fold__body">
+              {site.texts.length === 0
+                ? <p class="fold__text">Ausgewählte Texte folgen. Bis dahin: alles Neue im <a href={site.substack}>Newsletter auf Substack</a>.</p>
+                : <div class="rows">
+                    {site.texts.map((t: any) => (
+                      <a class="row row--press" href={t.href}>
+                        <span class="row__when">{t.date}</span>
+                        <span class="row__body"><span class="row__title">{t.title}</span><span class="row__meta">{t.where}</span></span>
+                      </a>
+                    ))}
+                  </div>}
+            </div>
+          </details>
+
+          <details class="fold" name="bereich" id="kontakt">
+            <summary class="fold__head fold__head--small">Kontakt</summary>
+            <div class="fold__body">
+              <a class="mail" href={`mailto:${site.email}`}>{site.email.replace('@', '[at]')}</a>
+              <nav class="socials" aria-label="Profile">
+                {site.socials.map((s) => <a href={s.href}>{s.label}</a>)}
+              </nav>
+            </div>
+          </details>
+        </div>
       </div>
     </div>
+
     <picture class="hero__portrait">
       <source srcset="/img/niko-alm.webp" type="image/webp" />
       <img src="/img/niko-alm.jpg" alt="Porträt von Niko Alm" width="900" height="918" fetchpriority="high" />
     </picture>
   </section>
 
-  <section class="section" id="ueber">
-    <div class="section__head">
-      <h2 class="section__title c-red">Über Alm</h2>
-    </div>
-    <div class="about">
-      <p class="about__intro">{site.intro}</p>
-      <div class="about__list rows">
-        {site.timeline.map((t) => (
-          <div class="row"><span class="row__when">{t.when}</span><span>{t.what}</span></div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="publikationen">
-    <div class="section__head">
-      <h2 class="section__title c-orange">Publikationen</h2>
-    </div>
-    <div class="books">
-      {site.books.map((b) => (
-        <a class="book" href={b.href}>
-          <span class="book__role">{b.role}</span>
-          <span>
-            <span class="book__title">{b.title}</span>
-            <span class="book__sub">{b.subtitle}</span>
-          </span>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  <section class="section" id="presse">
-    <div class="section__head">
-      <h2 class="section__title c-amber">Presse</h2>
-      <a class="more" href="https://alm.net/presse/">Kurzbio &amp; Pressefotos</a>
-    </div>
-    <div class="rows">
-      {site.press.map((p) => {
-        const inner = (
-          <>
-            <span class="row__when">{p.date}</span>
-            <span class="row__body">
-              <span class="row__title">{p.title}</span>
-              <span class="row__meta">{p.outlet}</span>
-            </span>
-          </>
-        );
-        return p.href
-          ? <a class="row row--press" href={p.href}>{inner}</a>
-          : <div class="row row--press">{inner}</div>;
-      })}
-    </div>
-    <a class="pill pill--outline" href="https://alm.net/presse/">Alle Gastkommentare &amp; Interviews</a>
-  </section>
+  <script is:inline>
+    // Link mit #bereich (z. B. alm.net/#presse) klappt den passenden Bereich auf
+    function openFromHash() {
+      const el = location.hash && document.getElementById(location.hash.slice(1));
+      if (el && el.tagName === 'DETAILS') { el.open = true; el.scrollIntoView({ block: 'start' }); }
+    }
+    openFromHash();
+    window.addEventListener('hashchange', openFromHash);
+  </script>
 </Base>
