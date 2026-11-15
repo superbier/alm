@@ -152,3 +152,24 @@ a.row:hover .row__title { color: var(--amber); }
 .page h1 { margin: 0 0 24px; font-size: var(--size-big); font-weight: var(--heavy); letter-spacing: var(--tight); line-height: 1; }
 .page p { font-size: 18px; line-height: 1.6; }
 @media (max-width: 860px) { .hero__portrait { position: static; } }
+
+/* Unterseiten (Über Alm, später Presse, Publikationen …) */
+.sub { padding: clamp(32px, 5vw, 72px) 0 clamp(48px, 7vw, 96px); max-width: 980px; }
+.sub__title { margin: 0 0 clamp(32px, 5vw, 64px); font-size: var(--size-name); font-weight: var(--heavy); letter-spacing: var(--tight); line-height: 0.98; }
+.sub__block { margin-bottom: clamp(48px, 7vw, 88px); }
+.sub__kicker { margin: 0 0 20px; font-size: var(--size-small); font-weight: var(--heavy); letter-spacing: var(--tight); color: var(--grey); line-height: 1.1; }
+.sub__note { margin: -8px 0 20px; color: var(--muted); font-size: 16px; }
+
+.row--wide { grid-template-columns: minmax(120px, 200px) 1fr; padding: 20px 0; }
+.row__name { color: var(--yellow); font-weight: 700; font-size: 17px; }
+.row__text { font-size: clamp(16px, 1.4vw, 18px); line-height: 1.6; max-width: 62ch; }
+.row--wide .link-out { margin-top: 8px; font-size: 15px; }
+.row--single { grid-template-columns: 1fr; }
+.row__by { color: var(--muted); font-size: 15px; }
+
+.essay__part { margin-bottom: clamp(32px, 5vw, 56px); }
+.essay__title { margin: 0 0 20px; font-size: var(--size-big); font-weight: var(--heavy); letter-spacing: var(--tight); line-height: 1.02; }
+.essay p { margin: 0 0 16px; max-width: 62ch; font-size: clamp(17px, 1.5vw, 19px); line-height: 1.65; }
+.essay__credit { color: var(--muted); font-size: 15px !important; }
+.more-link { display: inline-block; margin-top: 20px; font-size: 17px; font-weight: 700; text-decoration: none; }
+@media (max-width: 600px) { .row--wide { grid-template-columns: 1fr; gap: 6px; } }

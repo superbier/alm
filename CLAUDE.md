@@ -11,7 +11,8 @@ Niko pflegt die Seite per Chat-Anweisung. Änderungen klein halten, nichts erfin
   Bücher, Presse-Einträge, Social-Links, E-Mail. Inhaltliche Änderungen fast immer nur hier.
 - `src/styles/global.css` – Design. Farben und Schrift als Variablen oben in `:root`.
 - `src/layouts/Base.astro` – Kopf, Navigation, Fußzeile.
-- `src/pages/` – eine Datei pro Seite (`index.astro`, `impressum.astro`).
+- `src/pages/` – eine Datei pro Seite (`index.astro`, `ueber.astro`, `impressum.astro`).
+- Unterseiten haben eigene Inhaltsdateien, z. B. `src/data/ueber.json` für /ueber.
 
 ## Design (Richtung „E · Glut“)
 - Schwarz, Akzente Rot → Orange → Bernstein → Gelb (`--red`, `--orange`, `--amber`, `--yellow`).

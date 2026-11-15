@@ -1,0 +1,83 @@
+{
+  "groups": [
+    {
+      "title": "Aktuell",
+      "items": [
+        {
+          "name": "Average",
+          "text": "Im Herbst 2021 gründeten Yannick Gotthardt und Niko Alm gemeinsam die Average 2042 GmbH als Strategieentwicklung, Unternehmensberatung, Micro Think Tank, Konzeptbureau und Kampagneneinheit für Unternehmen, Institutionen, Medien und politische Organisationen.",
+          "link": { "label": "average.media", "href": "https://average.media/" }
+        },
+        {
+          "name": "Schmaltz",
+          "text": "Niko Alm wirkt auch als Nano Business Angel. Seine Beteiligungen pflegt er über die 2012 von ihm gegründete Schmaltz GmbH.",
+          "link": { "label": "schmaltz.at", "href": "http://schmaltz.at/" }
+        }
+      ]
+    },
+    {
+      "title": "Davor",
+      "items": [
+        {
+          "name": "Super-Fi",
+          "text": "2001 gründete Niko Alm die Kreativagentur Super-Fi, die zu einem kleinen Netzwerk von Unternehmen in Österreich, Polen und der Schweiz aufgewachsen ist. 2013 verkaufte er seine Anteile mehrheitlich (und 2016 vollständig) an VICE. Das Unternehmen wurde als VIRTUE weitergeführt."
+        },
+        {
+          "name": "VICE",
+          "text": "2006 brachte Niko Alm die Medienmarke VICE gemeinsam mit Stefan Häckel nach Österreich und war mit ihm gemeinsam bis 2013 Herausgeber von VICE Alps. Danach war er bis März 2016 auch in der Geschäftsführung der VICE CEE Holding."
+        },
+        {
+          "name": "NEOS",
+          "text": "Von Oktober 2013 bis März 2017 war Niko Alm Abgeordneter zum Nationalrat für NEOS. Er betreute die Ausschüsse für Innere Sicherheit, Kultur (Vorsitz), Sport und Immunität. Er war Sprecher für Wirtschaft (Start-ups, EPU, KMU), Medien, Netzpolitik und Weltraum."
+        },
+        {
+          "name": "Addendum",
+          "text": "Bis September 2020 war Niko Alm Geschäftsführer der im April 2017 gegründeten investigativen Rechercheplattform Addendum der gemeinnützigen Quo Vadis Veritas Stiftung."
+        }
+      ]
+    },
+    {
+      "title": "Und außerdem",
+      "items": [
+        {
+          "name": "Pastafaris Austria",
+          "text": "Niko Alm ist bekennender Pastafari und MC (Master of Celery) der Kirche des Fliegenden Spaghettimonsters Österreich. Sein Führerschein mit dem Nudelsieb ist aber wesentlich bekannter als er selbst."
+        },
+        {
+          "name": "Laïcité",
+          "text": "Aus seiner wachsenden Unzufriedenheit mit der nicht durchgezogenen Trennung von Republik und Religion gründete Niko Alm Anfang 2009 die Laizismus-Initiative, die er 2021 in Laïcité – Institut für Laizität umgewandelt hat.",
+          "link": { "label": "laizismus.at", "href": "http://www.laizismus.at/" }
+        }
+      ]
+    }
+  ],
+  "essay": {
+    "credit": "Text: Yannick Palim Gotthardt",
+    "parts": [
+      {
+        "title": ["Fotogene Schale,", "nerdiger Kern."],
+        "paragraphs": [
+          "Es spricht einiges dafür, dass es sich bei Niko Alm um ein erfolgreiches Start-up handelt. Er hat ein Faible für radikalen Wildwuchs, mag disruptives und Technologies und Disruptive Technologies. Einiges spricht aber auch dagegen. So passt sein Portfolio schon lange in keinen Elevator-Pitch mehr, er neigt nicht zum Exit und wächst organisch, seit 1975, in Wien (Wien) und Weikendorf (NÖ). Alm mag phil Kommunikationswissenschaften und Philosophie (Uni Wien), studierte Betriebswirtschaft (WU Wien) und Digitale Kunst (die Angewandte), wurde zeitgleich 1998 EPU, gründete 2001 mit Super-Fi eine digitale Kreativagentur, die sich in den Folgejahren zum Mikromischkonzern auswuchs. Seit 2013 und nach dem Verkauf von Teilen der Unternehmensgruppe an VICE, ist er Geschäftsführer der VICE CEE und NEOS-Nationalrat."
+        ]
+      },
+      {
+        "title": ["Post-zynisch,", "prä-pragmatisch."],
+        "paragraphs": [
+          "Die Mehrheit seiner 17.000 Twitterfollower würde Alm als post-zynisch und prä-pragmatisch beschreiben (#subjektprädikatobjekt #twittintellect). Alm neigt nicht dazu Dinge zu kategorisieren. Wichtiger ist ihm, dass Dinge passieren. Alm mag Dinge. Er ist „not particularly good at anything“. Er ist ein Ein-Mann-Inkubator.",
+          "Alms Unternehmertum ist politisch. Das macht Sinn, denn wenn man der Soziologie, der Generations- und Unternehmensforschung glaubt, dann ist „der unternehmerische Einzelne“ die prägende Person des 21. Jahrhunderts. Er löst derzeit im Zuge der Digitalisierung den „gewerkschaftlichen Arbeitnehmer“ in seiner gesellschaftsprägenden Stellung ab. Wer im 20. Jahrhundert arbeiterbewegt war, ist jetzt unternehmerisch. Alm weiß das. Alm mag evidenzbasierte Politik. Entrepreneurship ist in Alms Welt also keine Wohlstands- oder Einkommensfrage und jedenfalls mehr als eine Erwerbsform. Es ist der Zustand unserer Gesellschaft. Wer Willy Brandt wählte, wählt Alm."
+        ]
+      }
+    ]
+  },
+  "others": {
+    "title": "Was andere über mich geschrieben haben",
+    "note": "Das vermutlich aber gar nicht mehr online ist. Klicken Sie selbst!",
+    "items": [
+      { "title": "Wikipedia", "by": "von vielen (jedenfalls aber von ein paar ÖVP-Mitarbeitern)", "href": "https://de.wikipedia.org/wiki/Niko_Alm" },
+      { "title": "Porträt in The Gap", "by": "von Dieter Rappold", "href": "http://alm.at/portrait-in-the-gap/" },
+      { "title": "Porträt auf inventures.eu", "by": "von Alena Schmuck", "href": "http://inventures.eu/im-not-particularly-good-at-anything" },
+      { "title": "„Intellektuelle Untermittelklasse“", "by": "von Michael Fleischhacker", "href": "https://twitter.com/mfleischhacker1/status/420291414161752064" },
+      { "title": "„Olles Nudelsieb“", "by": "von Armin Thurnher", "href": "" }
+    ]
+  }
+}

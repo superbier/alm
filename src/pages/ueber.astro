@@ -1,0 +1,56 @@
+---
+import Base from '../layouts/Base.astro';
+import u from '../data/ueber.json';
+
+const arrow = '<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg>';
+---
+<Base title="Über Alm – Niko Alm" description="Niko Alm: Average, Schmaltz, Super-Fi, VICE, NEOS, Addendum, Laïcité.">
+  <article class="sub">
+    <h1 class="sub__title c-red">Über Alm</h1>
+
+    {u.groups.map((g) => (
+      <section class="sub__block">
+        <h2 class="sub__kicker">{g.title}</h2>
+        <div class="rows">
+          {g.items.map((it: any) => (
+            <div class="row row--wide">
+              <span class="row__name">{it.name}</span>
+              <span class="row__body">
+                <span class="row__text">{it.text}</span>
+                {it.link && <a class="link-out" href={it.link.href}>{it.link.label} <Fragment set:html={arrow} /></a>}
+              </span>
+            </div>
+          ))}
+        </div>
+      </section>
+    ))}
+
+    <section class="sub__block essay">
+      {u.essay.parts.map((p) => (
+        <div class="essay__part">
+          <h2 class="essay__title c-orange">{p.title.map((line, i) => <>{line}{i < p.title.length - 1 && <br />}</>)}</h2>
+          {p.paragraphs.map((t) => <p>{t}</p>)}
+        </div>
+      ))}
+      <p class="essay__credit">{u.essay.credit}</p>
+    </section>
+
+    <section class="sub__block">
+      <h2 class="sub__kicker">{u.others.title}</h2>
+      <p class="sub__note">{u.others.note}</p>
+      <div class="rows">
+        {u.others.items.map((o) => {
+          const inner = (
+            <span class="row__body">
+              <span class="row__title">{o.title}</span>
+              <span class="row__by">{o.by}</span>
+            </span>
+          );
+          return o.href
+            ? <a class="row row--single" href={o.href}>{inner}</a>
+            : <div class="row row--single">{inner}</div>;
+        })}
+      </div>
+    </section>
+  </article>
+</Base>
