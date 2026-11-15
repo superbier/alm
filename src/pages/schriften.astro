@@ -1,0 +1,51 @@
+---
+// Temporäre Vergleichsseite für die Schriftwahl. Nach der Entscheidung löschen.
+const fonts = [
+  { name: 'Helvetica Bold (aktuell, nur auf Apple-Geräten echt)', family: "'Helvetica Neue', Helvetica, Arial, sans-serif", weight: 700 },
+  { name: 'Inter Tight Black', family: "'Inter Tight', sans-serif", weight: 900 },
+  { name: 'Hanken Grotesk Black', family: "'Hanken Grotesk', sans-serif", weight: 900 },
+  { name: 'Archivo Black', family: "'Archivo', sans-serif", weight: 900 },
+  { name: 'Schibsted Grotesk Black', family: "'Schibsted Grotesk', sans-serif", weight: 900 },
+];
+const words = [
+  ['Newsletter', '#ff3b1f'],
+  ['Publikationen', '#ff6a1a'],
+  ['Average', '#ff9a1a'],
+  ['Schmaltz', '#ffc21a'],
+];
+---
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Schriftvergleich – alm.net</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;900&family=Hanken+Grotesk:wght@500;900&family=Archivo:wght@500;900&family=Schibsted+Grotesk:wght@500;900&display=swap" rel="stylesheet" />
+    <style>
+      body { margin: 0; background: #000; color: #f2f2f2; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      .wrap { max-width: 1280px; margin: 0 auto; padding: 48px clamp(20px, 5vw, 64px); }
+      .intro { font-size: 18px; color: #b5b5b5; max-width: 60ch; line-height: 1.5; }
+      .sample { border-top: 1px solid #333; padding: 32px 0 56px; }
+      .label { font-size: 14px; color: #8a8a8a; margin: 0 0 24px; letter-spacing: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      .num { color: #ffc21a; font-weight: 700; margin-right: 8px; }
+      .name { color: #fff; font-size: clamp(48px, 7vw, 96px); line-height: 0.95; letter-spacing: -0.06em; margin: 0 0 24px; }
+      .w { display: block; font-size: clamp(40px, 6vw, 80px); line-height: 1.04; letter-spacing: -0.06em; }
+      .body { margin: 28px 0 0; max-width: 46ch; font-size: 20px; line-height: 1.45; font-weight: 500; letter-spacing: -0.01em; color: #fff; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <p class="intro">Schriftvergleich: dieselben Zeilen in fünf Schriften, alle im fettesten Schnitt, gleich eng gesetzt. Nr. 2–5 sind frei und sehen auf jedem Gerät gleich aus.</p>
+      {fonts.map((f, i) => (
+        <section class="sample" style={`font-family: ${f.family}`}>
+          <p class="label"><span class="num">{i + 1}</span>{f.name}</p>
+          <p class="name" style={`font-weight: ${f.weight}`}>Niko Alm</p>
+          {words.map(([w, c]) => <span class="w" style={`color: ${c}; font-weight: ${f.weight}`}>{w}</span>)}
+          <p class="body">Medienunternehmer, Publizist, Ex-Abgeordneter. Fotogene Schale, nerdiger Kern. Äöü ß – 2013–2017.</p>
+        </section>
+      ))}
+    </div>
+  </body>
+</html>

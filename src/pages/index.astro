@@ -10,7 +10,10 @@ import site from '../data/site.json';
         {site.heroLinks.map((l) => <a class={`c-${l.color}`} href={l.href}>{l.label}</a>)}
       </div>
     </div>
-    <div class="hero__portrait">[Porträt folgt – s/w, läuft ins Schwarz aus]</div>
+    <picture class="hero__portrait">
+      <source srcset="/img/niko-alm.webp" type="image/webp" />
+      <img src="/img/niko-alm.jpg" alt="Porträt von Niko Alm" width="900" height="918" fetchpriority="high" />
+    </picture>
   </section>
 
   <section class="section" id="ueber">
