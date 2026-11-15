@@ -1,7 +1,8 @@
 # alm.net
 
-Persönliche Website von Niko Alm. Statische Astro-Seite, gehostet auf Cloudflare Pages
-(Testumgebung: alm-net.pages.dev; jeder Push auf `main` geht automatisch online).
+Persönliche Website von Niko Alm. Statische Astro-Seite, gehostet auf Cloudflare
+(als Cloudflare Worker mit statischen Assets; Testumgebung: https://alm.superbier.workers.dev –
+jeder Push auf `main` geht automatisch online).
 
 Niko pflegt die Seite per Chat-Anweisung. Änderungen klein halten, nichts erfinden.
 
