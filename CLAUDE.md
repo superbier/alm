@@ -12,6 +12,7 @@ Niko pflegt die Seite per Chat-Anweisung. Änderungen klein halten, nichts erfin
 - `src/styles/global.css` – Design. Farben und Schrift als Variablen oben in `:root`.
 - `src/layouts/Base.astro` – Kopf, Navigation, Fußzeile.
 - `src/pages/` – eine Datei pro Seite (`index.astro`, `ueber.astro`, `presse.astro`, `impressum.astro`).
+- Texte: eine Markdown-Datei pro Text in `src/content/texte/` (Frontmatter: title, subtitle, date, dateLabel, kind, where, note; Fußnoten als `[^1]`). Erscheinen automatisch unter /texte/<dateiname> und im Bereich „Texte“ der Startseite.
 - Unterseiten haben eigene Inhaltsdateien: `src/data/ueber.json`, `src/data/presse.json` (Presse-Liste speist auch die Startseite), `src/data/newsletter.json`.
 
 ## Design (Richtung „E · Glut“)

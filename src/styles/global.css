@@ -191,3 +191,22 @@ a.row:hover .row__title { color: var(--amber); }
 .sub__lead { margin: 0 0 14px; max-width: 62ch; font-size: clamp(17px, 1.5vw, 20px); line-height: 1.55; color: var(--white); }
 .prose p { margin: 0 0 16px; max-width: 66ch; font-size: clamp(16px, 1.4vw, 18px); line-height: 1.65; }
 .row--dated { grid-template-columns: minmax(120px, 170px) 1fr; }
+
+/* Einzelne Texte (/texte/…) */
+.text { max-width: 760px; }
+.text__meta { margin: 0 0 12px; color: var(--muted); font-size: 15px; font-weight: 700; }
+.text .sub__title { margin-bottom: 16px; }
+.text__subtitle { margin: 0 0 28px; font-size: clamp(19px, 1.8vw, 24px); line-height: 1.4; color: var(--white); font-weight: 500; }
+.text__note { margin: 0 0 40px; padding: 16px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--soft); font-size: 15px; line-height: 1.6; }
+.text__body p { margin: 0 0 1.1em; font-size: clamp(17px, 1.5vw, 19px); line-height: 1.7; }
+.text__body h2 {
+  margin: 1.8em 0 0.6em; font-family: var(--font-head); font-stretch: var(--stretch-head); font-weight: var(--heavy);
+  text-transform: var(--case-head); letter-spacing: var(--tight); font-size: clamp(18px, 2vw, 24px); line-height: 1.2; color: var(--amber);
+}
+.text__body sup { font-size: 0.7em; line-height: 0; }
+.text__body sup a { text-decoration: none; font-weight: 700; padding: 0 1px; }
+.text__body .footnotes { margin-top: 3em; padding-top: 1em; border-top: 1px solid var(--line); }
+.text__body .footnotes h2 { color: var(--grey); font-size: 16px; }
+.text__body .footnotes ol { padding-left: 1.4em; }
+.text__body .footnotes li, .text__body .footnotes p { font-size: 14px; line-height: 1.55; color: var(--soft); margin: 0 0 6px; overflow-wrap: anywhere; }
+.text__body .data-footnote-backref { text-decoration: none; }

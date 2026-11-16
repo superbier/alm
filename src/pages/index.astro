@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import site from '../data/site.json';
 import newsletter from '../data/newsletter.json';
 import presse from '../data/presse.json';
+import { texte } from '../lib/texte';
 
 const arrow = '<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg>';
 ---
@@ -99,16 +100,19 @@ const arrow = '<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24
           <details class="fold" name="bereich" id="texte">
             <summary class="fold__head fold__head--small">Texte</summary>
             <div class="fold__body">
-              {site.texts.length === 0
-                ? <p class="fold__text">Ausgewählte Texte folgen. Bis dahin: alles Neue im <a href={site.substack}>Newsletter auf 2042.at</a>.</p>
-                : <div class="rows">
-                    {site.texts.map((t: any) => (
-                      <a class="row row--press" href={t.href}>
-                        <span class="row__when">{t.date}</span>
-                        <span class="row__body"><span class="row__title">{t.title}</span><span class="row__meta">{t.where}</span></span>
-                      </a>
-                    ))}
-                  </div>}
+              <div class="rows">
+                {texte.map((t) => (
+                  <a class="row row--press" href={`/texte/${t.slug}`}>
+                    <span class="row__when">{t.dateLabel}</span>
+                    <span class="row__body">
+                      <span class="row__title">{t.title}</span>
+                      <span class="row__sub">{t.subtitle}</span>
+                      <span class="row__meta">{t.kind}</span>
+                    </span>
+                  </a>
+                ))}
+              </div>
+              <a class="more-link" href={site.substack}>Laufend Neues im Newsletter auf 2042.at →</a>
             </div>
           </details>
 

@@ -1,0 +1,22 @@
+---
+import Base from '../../layouts/Base.astro';
+import { texte, inlineLinks } from '../../lib/texte';
+
+export function getStaticPaths() {
+  return texte.map((t) => ({ params: { slug: t.slug }, props: { t } }));
+}
+const { t } = Astro.props;
+const { Content } = t;
+---
+<Base title={`${t.title} – Niko Alm`} description={t.subtitle || t.title}>
+  <article class="sub text">
+    <p class="text__meta">{t.kind} · {t.dateLabel}</p>
+    <h1 class="sub__title c-orange">{t.title}</h1>
+    {t.subtitle && <p class="text__subtitle">{t.subtitle}</p>}
+    {t.note && <p class="text__note" set:html={inlineLinks(t.note)} />}
+    <div class="text__body">
+      <Content />
+    </div>
+    <a class="more-link" href="/#texte">← Alle Texte</a>
+  </article>
+</Base>
