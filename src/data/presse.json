@@ -1,0 +1,157 @@
+{
+  "intro": [
+    "Generelle Presseanfragen können direkt an mich gerichtet werden: niko[at]alm.at",
+    "Die Biographie darf übernommen und in gekürzter (natürlich nicht sinnändernder) Form wiedergegeben werden. Die Fotos dürfen kostenfrei unter Angabe des entsprechenden Credits (© Name Fotograf_in) und mit Link auf alm.net für Publikationen verwendet werden.",
+    "Ein kurzes E-Mail mit einem Link, wo die Inhalte zur Anwendung kommen, wäre nett: niko[at]alm.at"
+  ],
+  "bio_de": [
+    "Niko Alm studierte Philosophie, Publizistik und Kommunikationswissenschaften, gründete 2001 die Kreativagentur Super-Fi und brachte 2007 den internationalen Medienkonzern VICE nach Österreich. Neben seiner unternehmerischen Tätigkeit engagiert sich Alm seit 2009 mit der Gründung der Laizismus-Initiative (nunmehr „Laïcité – Institut für Laizität“) zur Trennung von Staat und Religion auch politisch. 2011 erlangte er als Pastafari weltweite Bekanntheit, als er mit einem Nudelsieb auf dem Kopf in seinem Führerschein die Sonderrechte von Religionsgemeinschaften ins Problembewusstsein rückte.",
+    "Alm ist Gründungsmitglied von NEOS und war von Oktober 2013 bis März 2017 Abgeordneter zum Nationalrat. Zu seinen Schwerpunkten zählten Medien- und Netzpolitik, Raumfahrt, Kultur (Ausschuss-Vorsitz) sowie Wirtschaft, insbesondere Start-ups. Er ist selbst auch Nano-Business Angel und hält mit seiner Schmaltz GmbH Beteiligungen an ca. 10 Unternehmen.",
+    "Super-Fi wurde 2013 von VICE aufgekauft und 2016 in VIRTUE umbenannt. Alm zog sich aus der Geschäftsführung (von Super-Fi und VICE CEE) zurück, um sich verstärkt seinem politischen Mandat zu widmen. Dieses war aber aus seiner Sicht mit seiner Position als Geschäftsführer von Addendum ab April 2017 nicht vereinbar. Konsequenterweise legte er sein Mandat zurück. Addendum wurde im Herbst 2020 eingestellt. Seither pflegt Niko Alm seine zurückgewonnene unternehmerische Freiheit im Bereich Medienentwicklung und gründete im Herbst 2021 gemeinsam mit Yannick Gotthardt das Unternehmen Average."
+  ],
+  "bio_en": [
+    "Niko Alm (born in Vienna 1975) is an Austrian media entrepreneur and publicist. He is founder of the creative agency Super-Fi. The company joined the international media group VICE in 2013 and was later renamed Virtue. Alm served as CEO for VICE CEE until 2016.",
+    "He is a founding member of the Austrian liberal political party NEOS, and has been a member of parliament from 2013 to 2017. His policy focus areas included economics, media, culture, internal affairs, net politics and space.",
+    "Alm terminated his political career to become managing director of the investigative media platform Addendum (2017 – 2020). In 2021 he co-founded the consultancy Average. Alm holds a master’s degree in philosophy and communication science."
+  ],
+  "photos_note": "Die Fotos liegen vorerst noch auf der alten Seite (alm.net/wp-content) und müssen vor der Umstellung ins Repo übernommen werden.",
+  "photos": [
+    {
+      "credit": "Isabella-Anja Khom",
+      "href": "https://alm.net/wp-content/uploads/2020/11/NikoAlm%C2%A9Isabella-AnjaKhom_300.jpg"
+    },
+    {
+      "credit": "Roger Primaten",
+      "href": "https://alm.net/wp-content/uploads/2020/11/NikoAlm_@RogerPrimaten_300dpi-1.jpg"
+    },
+    {
+      "credit": "Ingo Pertramer",
+      "href": "https://alm.net/wp-content/uploads/2020/11/NikoAlm_%C2%A9IngoPertramer_300dpi-scaled.jpg"
+    },
+    {
+      "credit": "Nicole Heiling",
+      "href": "https://alm.net/wp-content/uploads/2020/11/NikoAlm_%C2%A9NicoleHeiling_300dpi.jpg"
+    },
+    {
+      "credit": "Ingo Pertramer",
+      "href": "https://alm.net/wp-content/uploads/2020/11/NikoAlm_2015_1%C2%A9IngoPertramer-scaled.jpg"
+    },
+    {
+      "credit": "Ingo Pertramer",
+      "href": "https://alm.net/wp-content/uploads/2020/11/NikoAlm_2015_2%C2%A9IngoPertramer.jpg"
+    },
+    {
+      "credit": "Isabella-Anja Khom",
+      "href": "https://alm.net/wp-content/uploads/2020/11/NikoAlm%C2%A9IsabellaKhom181202_1.jpg"
+    },
+    {
+      "credit": "Nicole Heiling",
+      "href": "https://alm.net/wp-content/uploads/2020/11/NikoAlm%C2%A9NicoleHeiling2018_1-scaled.jpg"
+    },
+    {
+      "credit": "Philipp Pankraz",
+      "href": "https://alm.net/wp-content/uploads/2021/12/NikoAlm%C2%A9PhilippPankraz.jpg"
+    },
+    {
+      "credit": "Nicole Heiling",
+      "href": "https://alm.net/wp-content/uploads/2021/12/NikoAlm%C2%A9NicoleHeiling2018_2-scaled.jpg"
+    },
+    {
+      "credit": "Tim Ertl",
+      "href": "https://alm.net/wp-content/uploads/2025/04/2023-Niko-Alm-%C2%A9-Fifteen-Seconds-Tim-Ertl.jpg"
+    }
+  ],
+  "items": [
+    {
+      "date": "19. Februar 2025",
+      "short": "Feb 2025",
+      "title": "„Die Tagespresse“ und das OGH-Urteil: Die Kunst der Täuschung",
+      "outlet": "Die Presse",
+      "href": "https://www.diepresse.com/19381953/die-tagespresse-und-das-ogh-urteil-die-kunst-der-taeuschung"
+    },
+    {
+      "date": "20. November 2024",
+      "short": "Nov 2024",
+      "title": "Wem es nicht gefällt, kann gehen. Wem es doch gefällt, darf auch wieder zurückkommen",
+      "outlet": "Die Presse",
+      "href": "https://www.diepresse.com/19091885/wem-es-nicht-gefaellt-kann-gehen-wem-es-doch-gefaellt-darf-auch-wieder-zurueckkommen"
+    },
+    {
+      "date": "3. April 2024",
+      "short": "Apr 2024",
+      "title": "Die ÖVP will über Leitkultur reden. Na gut, reden wir darüber!",
+      "outlet": "Der Standard",
+      "href": "https://www.derstandard.at/story/3000000214110/die-oevp-will-ueber-leitkultur-reden-na-gut-reden-wir-darueber"
+    },
+    {
+      "date": "26. Oktober 2023",
+      "short": "Okt 2023",
+      "title": "Eine epochale Zäsur im Verhältnis Kirche und Staat",
+      "outlet": "Die Presse",
+      "href": "https://www.diepresse.com/17772142/eine-epochale-zaesur-im-verhaeltnis-kirche-und-staat"
+    },
+    {
+      "date": "7. Jänner 2022",
+      "short": "Jän 2022",
+      "title": "Die neue Gegenwärtigkeit des Metaverse",
+      "outlet": "Die Presse",
+      "href": "https://www.diepresse.com/6082792/die-neue-gegenwaertigkeit-des-metaverse"
+    },
+    {
+      "date": "25. Oktober 2021",
+      "short": "Okt 2021",
+      "title": "Pfarrer vs. Kirchenkritiker. Premur – Alm: Was bleibt, wenn man Religion durch das Nudelsieb gießt?",
+      "outlet": "Kleine Zeitung",
+      "href": "https://www.kleinezeitung.at/kaernten/klagenfurt/6052178/Pfarrer-vs-Kirchenkritiker_Premur-Alm_Was-bleibt-wenn-man"
+    },
+    {
+      "date": "19. Oktober 2021",
+      "short": "Okt 2021",
+      "title": "Regierung und Medien: Abstandsregel verlernt",
+      "outlet": "Die Presse",
+      "href": "https://www.diepresse.com/6049484/regierung-und-medien-abstandsregel-verlernt"
+    },
+    {
+      "date": "9. Juni 2021",
+      "short": "Jun 2021",
+      "title": "Religiöse Vermessenheit",
+      "outlet": "Die Presse",
+      "href": "https://www.diepresse.com/5991394/religiose-vermessenheit"
+    },
+    {
+      "date": "8. Dezember 2020",
+      "short": "Dez 2020",
+      "title": "Ethik rein, Religion raus",
+      "outlet": "Wiener Zeitung",
+      "href": "https://www.wienerzeitung.at/meinung/gastkommentare/2084740-Ethik-rein-Religion-raus.html"
+    },
+    {
+      "date": "14. April 2020",
+      "short": "Apr 2020",
+      "title": "ORF-Information pro toto",
+      "outlet": "Der Standard",
+      "href": "https://www.derstandard.at/story/2000116760165/orf-information-pro-toto"
+    },
+    {
+      "date": "25. April 2019",
+      "short": "Apr 2019",
+      "title": "So wird die Modernisierung des ORF blockiert",
+      "outlet": "Die Presse",
+      "href": "https://www.diepresse.com/5618236/so-wird-die-modernisierung-des-orf-blockiert"
+    },
+    {
+      "date": "24. Oktober 2014",
+      "short": "Okt 2014",
+      "title": "Allgemeine Wehrpflicht: Einmal aussetzen, bitte",
+      "outlet": "Der Standard",
+      "href": "https://www.derstandard.at/story/2000007265912/allgemeine-wehrpflicht-einmal-aussetzen-bitte"
+    },
+    {
+      "date": "10. September 2012",
+      "short": "Sep 2012",
+      "title": "„Es besteht Gefahr, dass die Religion in den Hinterhof wandert“",
+      "outlet": "Die Presse",
+      "href": "https://www.diepresse.com/1288227/es-besteht-gefahr-dass-die-religion-in-den-hinterhof-wandert"
+    }
+  ]
+}

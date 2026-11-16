@@ -1,0 +1,54 @@
+---
+import Base from '../layouts/Base.astro';
+import p from '../data/presse.json';
+---
+<Base title="Presse – Niko Alm" description="Presseinformationen, Kurzbiografie, Pressefotos und Gastkommentare von Niko Alm.">
+  <article class="sub">
+    <h1 class="sub__title c-amber">Presse</h1>
+
+    <section class="sub__block">
+      {p.intro.map((t) => <p class="sub__lead">{t}</p>)}
+    </section>
+
+    <section class="sub__block">
+      <h2 class="sub__kicker">Kurzbiografie</h2>
+      <div class="prose">{p.bio_de.map((t) => <p>{t}</p>)}</div>
+    </section>
+
+    <section class="sub__block" lang="en">
+      <h2 class="sub__kicker">Short Bio</h2>
+      <div class="prose">{p.bio_en.map((t) => <p>{t}</p>)}</div>
+    </section>
+
+    <section class="sub__block" id="fotos">
+      <h2 class="sub__kicker">Fotos</h2>
+      <div class="rows">
+        {p.photos.map((f, i) => (
+          <a class="row row--press" href={f.href} download>
+            <span class="row__when">{String(i + 1).padStart(2, '0')}</span>
+            <span class="row__body">
+              <span class="row__title">© {f.credit}</span>
+              <span class="row__meta">Download ↓</span>
+            </span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="sub__block" id="gastkommentare">
+      <h2 class="sub__kicker">Gastkommentare, Interviews</h2>
+      <p class="sub__note">Eine völlig unvollständige Liste.</p>
+      <div class="rows">
+        {p.items.map((it) => (
+          <a class="row row--press row--dated" href={it.href}>
+            <span class="row__when">{it.date}</span>
+            <span class="row__body">
+              <span class="row__title">{it.title}</span>
+              <span class="row__meta">{it.outlet}</span>
+            </span>
+          </a>
+        ))}
+      </div>
+    </section>
+  </article>
+</Base>

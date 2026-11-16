@@ -187,3 +187,7 @@ a.row:hover .row__title { color: var(--amber); }
 .fold__head, .hero__name, .sub__title, .sub__kicker, .essay__title, .book__title, .page h1 {
   font-family: var(--font-head); font-stretch: var(--stretch-head); text-transform: var(--case-head);
 }
+
+.sub__lead { margin: 0 0 14px; max-width: 62ch; font-size: clamp(17px, 1.5vw, 20px); line-height: 1.55; color: var(--white); }
+.prose p { margin: 0 0 16px; max-width: 66ch; font-size: clamp(16px, 1.4vw, 18px); line-height: 1.65; }
+.row--dated { grid-template-columns: minmax(120px, 170px) 1fr; }

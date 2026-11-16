@@ -1,9 +1,34 @@
 ---
 import Base from '../layouts/Base.astro';
+
+// Inhalte 1:1 von der bisherigen Seite alm.net/impressum übernommen.
+const kontakt = [
+  { label: 'E-Mail', text: 'niko[at]alm.at', href: 'mailto:niko@alm.at' },
+  { label: 'X', text: '@NikoAlm', href: 'https://x.com/NikoAlm' },
+  { label: 'Facebook-Profil', text: 'facebook.com/nikoalm', href: 'https://facebook.com/nikoalm' },
+  { label: 'Facebook-Page', text: 'facebook.com/rezor', href: 'https://www.facebook.com/rezor' },
+  { label: 'Instagram', text: '@NikoAlm', href: 'https://instagram.com/NikoAlm' },
+];
 ---
 <Base title="Impressum – Niko Alm">
-  <section class="page">
-    <h1 class="c-red">Impressum</h1>
-    <p>[Impressum folgt – wird von der bisherigen Seite übernommen.]</p>
-  </section>
+  <article class="sub">
+    <h1 class="sub__title c-red">Impressum</h1>
+
+    <section class="sub__block">
+      <h2 class="sub__kicker">Für den Inhalt verantwortlich</h2>
+      <p class="sub__lead">Niko Alm</p>
+    </section>
+
+    <section class="sub__block">
+      <h2 class="sub__kicker">Kontakt</h2>
+      <div class="rows">
+        {kontakt.map((k) => (
+          <div class="row row--wide">
+            <span class="row__name">{k.label}</span>
+            <span class="row__body"><a href={k.href}>{k.text}</a></span>
+          </div>
+        ))}
+      </div>
+    </section>
+  </article>
 </Base>
