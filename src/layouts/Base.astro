@@ -26,18 +26,19 @@ const isHome = Astro.url.pathname === '/';
   </head>
   <body>
     <div class="wrap">
-      <header class="site-header">
-        {isHome ? <span></span> : <a class="home-link" href="/">← {site.name}</a>}
-        <a class="pill pill--solid" href={site.substack}>Newsletter abonnieren</a>
-      </header>
+      {!isHome && (
+        <header class="site-header">
+          <a class="home-link" href="/">← {site.name}</a>
+        </header>
+      )}
 
       <main>
         <slot />
       </main>
 
       <footer class="site-footer">
+        <a class="footer__imprint" href="/impressum">Impressum</a>
         <span>© {new Date().getFullYear()} {site.name}</span>
-        <a href="/impressum">Impressum</a>
       </footer>
     </div>
   </body>

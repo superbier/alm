@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import site from '../data/site.json';
+import newsletter from '../data/newsletter.json';
 
 const arrow = '<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg>';
 ---
@@ -10,7 +11,7 @@ const arrow = '<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24
 
       <!-- Name: klappt „Über Alm“ auf -->
       <details class="fold fold--name" name="bereich" id="ueber">
-        <summary class="fold__head hero__name">{site.name}</summary>
+        <summary class="fold__head hero__name"><span>{site.name}</span><img class="hero__logo" src="/img/logo-alm.svg" alt="" width="2916" height="1667" /></summary>
         <div class="fold__body">
           <p class="about__intro">{site.intro}</p>
           <div class="rows">
@@ -27,7 +28,18 @@ const arrow = '<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24
           <summary class="fold__head fold__head--big c-red">Newsletter</summary>
           <div class="fold__body">
             <p class="fold__text">{site.newsletter.text}</p>
-            <a class="pill pill--solid" href={site.substack}>{site.newsletter.cta}</a>
+            <div class="rows">
+              {newsletter.items.map((n) => (
+                <a class="row row--press" href={n.href}>
+                  <span class="row__when">{n.date}</span>
+                  <span class="row__body">
+                    <span class="row__title">{n.title}</span>
+                    <span class="row__sub">{n.subtitle}</span>
+                  </span>
+                </a>
+              ))}
+            </div>
+            <a class="more-link" href={site.substack}>{site.newsletter.cta} →</a>
           </div>
         </details>
 

@@ -1,19 +1,37 @@
 {
   "name": "Niko Alm",
-  "substack": "https://ohnebekenntnis.substack.com/",
+  "substack": "https://www.2042.at/",
   "email": "niko@alm.at",
   "intro": "Medienunternehmer, Publizist, Ex-Abgeordneter. Fotogene Schale, nerdiger Kern.",
   "timeline": [
-    { "when": "seit 2021", "what": "Average – Strategie, Konzept, Kampagne. Mit Yannick Gotthardt." },
-    { "when": "seit 2012", "what": "Schmaltz – Beteiligungen als Nano Business Angel." },
-    { "when": "2017–2020", "what": "Geschäftsführer Addendum." },
-    { "when": "2013–2017", "what": "Abgeordneter zum Nationalrat, NEOS." },
-    { "when": "2006–2016", "what": "VICE Alps, VICE CEE." },
-    { "when": "2001", "what": "Gründung Super-Fi." }
+    {
+      "when": "seit 2021",
+      "what": "Average – Strategie, Konzept, Kampagne. Mit Yannick Gotthardt."
+    },
+    {
+      "when": "seit 2012",
+      "what": "Schmaltz – Beteiligungen als Nano Business Angel."
+    },
+    {
+      "when": "2017–2020",
+      "what": "Geschäftsführer Addendum."
+    },
+    {
+      "when": "2013–2017",
+      "what": "Abgeordneter zum Nationalrat, NEOS."
+    },
+    {
+      "when": "2006–2016",
+      "what": "VICE Alps, VICE CEE."
+    },
+    {
+      "when": "2001",
+      "what": "Gründung Super-Fi."
+    }
   ],
   "newsletter": {
-    "text": "Ohne Bekenntnis – der Newsletter auf Substack.",
-    "cta": "Newsletter abonnieren"
+    "text": "Der Newsletter auf 2042.at – die letzten Ausgaben:",
+    "cta": "Alle Ausgaben & abonnieren"
   },
   "average": {
     "text": "Im Herbst 2021 gemeinsam mit Yannick Gotthardt gegründet: Strategieentwicklung, Unternehmensberatung, Micro Think Tank, Konzeptbureau und Kampagneneinheit für Unternehmen, Institutionen, Medien und politische Organisationen.",
@@ -40,17 +58,52 @@
     }
   ],
   "press": [
-    { "date": "Feb 2025", "title": "„Die Tagespresse“ und das OGH-Urteil: Die Kunst der Täuschung", "outlet": "Die Presse", "href": "" },
-    { "date": "Nov 2024", "title": "Wem es nicht gefällt, kann gehen. Wem es doch gefällt, darf auch wieder zurückkommen", "outlet": "Die Presse", "href": "" },
-    { "date": "Apr 2024", "title": "Die ÖVP will über Leitkultur reden. Na gut, reden wir darüber!", "outlet": "Der Standard", "href": "" },
-    { "date": "Okt 2023", "title": "Eine epochale Zäsur im Verhältnis Kirche und Staat", "outlet": "Die Presse", "href": "" }
+    {
+      "date": "Feb 2025",
+      "title": "„Die Tagespresse“ und das OGH-Urteil: Die Kunst der Täuschung",
+      "outlet": "Die Presse",
+      "href": ""
+    },
+    {
+      "date": "Nov 2024",
+      "title": "Wem es nicht gefällt, kann gehen. Wem es doch gefällt, darf auch wieder zurückkommen",
+      "outlet": "Die Presse",
+      "href": ""
+    },
+    {
+      "date": "Apr 2024",
+      "title": "Die ÖVP will über Leitkultur reden. Na gut, reden wir darüber!",
+      "outlet": "Der Standard",
+      "href": ""
+    },
+    {
+      "date": "Okt 2023",
+      "title": "Eine epochale Zäsur im Verhältnis Kirche und Staat",
+      "outlet": "Die Presse",
+      "href": ""
+    }
   ],
   "texts": [],
   "socials": [
-    { "label": "Substack", "href": "https://ohnebekenntnis.substack.com/" },
-    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/nikoalm/" },
-    { "label": "Instagram", "href": "https://instagram.com/nikoalm" },
-    { "label": "X", "href": "https://x.com/NikoAlm" },
-    { "label": "Wikipedia", "href": "https://de.wikipedia.org/wiki/Niko_Alm" }
+    {
+      "label": "Substack",
+      "href": "https://www.2042.at/"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/nikoalm/"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://instagram.com/nikoalm"
+    },
+    {
+      "label": "X",
+      "href": "https://x.com/NikoAlm"
+    },
+    {
+      "label": "Wikipedia",
+      "href": "https://de.wikipedia.org/wiki/Niko_Alm"
+    }
   ]
 }
