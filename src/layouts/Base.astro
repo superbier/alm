@@ -1,8 +1,8 @@
 ---
 import '@fontsource-variable/inter-tight';
+import '@fontsource-variable/archivo/wdth.css';
 import '../styles/global.css';
 import site from '../data/site.json';
-import fonts from '../data/fonts.json';
 
 interface Props { title?: string; description?: string }
 const {
@@ -23,28 +23,6 @@ const isHome = Astro.url.pathname === '/';
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <script is:inline define:vars={{ fonts }}>
-      // Nur für die Schriftwahl: ?font=anton zeigt die Seite mit einer anderen Überschriften-Schrift.
-      // Bleibt beim Weiterklicken erhalten; ?font=inter setzt zurück.
-      (function () {
-        var id = new URLSearchParams(location.search).get('font');
-        try {
-          if (id) sessionStorage.setItem('almFont', id); else id = sessionStorage.getItem('almFont');
-        } catch (e) {}
-        var f = fonts.find(function (x) { return x.id === id; });
-        if (!f || f.id === 'inter') return;
-        var l = document.createElement('link');
-        l.rel = 'stylesheet';
-        l.href = 'https://fonts.googleapis.com/css2?family=' + encodeURIComponent(f.google).replace(/%20/g, '+').replace(/%3A/g, ':').replace(/%2C/g, ',').replace(/%40/g, '@') + '&display=swap';
-        document.head.appendChild(l);
-        var r = document.documentElement.style;
-        r.setProperty('--font-head', f.family);
-        r.setProperty('--heavy', String(f.weight));
-        r.setProperty('--tight', f.tracking);
-        r.setProperty('--stretch-head', f.stretch);
-        window.__almFont = f;
-      })();
-    </script>
   </head>
   <body>
     <div class="wrap">
@@ -62,15 +40,5 @@ const isHome = Astro.url.pathname === '/';
         <a href="/impressum">Impressum</a>
       </footer>
     </div>
-    <script is:inline>
-      // Hinweis-Leiste im Schrift-Vorschaumodus
-      if (window.__almFont) {
-        var b = document.createElement('div');
-        b.className = 'font-preview';
-        b.innerHTML = 'Vorschau: <strong></strong> <a href="/schriften">Alle Schriften</a> <a href="?font=inter">Zurücksetzen</a>';
-        b.querySelector('strong').textContent = window.__almFont.name;
-        document.body.appendChild(b);
-      }
-    </script>
   </body>
 </html>

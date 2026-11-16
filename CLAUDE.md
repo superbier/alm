@@ -16,7 +16,9 @@ Niko pflegt die Seite per Chat-Anweisung. Änderungen klein halten, nichts erfin
 
 ## Design (Richtung „E · Glut“)
 - Schwarz, Akzente Rot → Orange → Bernstein → Gelb (`--red`, `--orange`, `--amber`, `--yellow`).
-- Schrift: Inter Tight (selbst gehostet über @fontsource-variable), Überschriften im Schnitt 900 (`--heavy`), eng gesetzt (`--tight`).
+- Schriften (selbst gehostet über @fontsource-variable, kein Google):
+  Überschriften Archivo Expanded Black (`--font-head`, `--stretch-head: 125%`, `--heavy: 900`), in Versalien (`--case-head`);
+  Fließtext Inter Tight (`--font`).
 - Startseite = eine Liste ausklappbarer Bereiche (`<details name="bereich">`, immer nur einer offen):
   Name „Niko Alm“ → Über Alm; groß und farbig: Newsletter, Publikationen, Average, Schmaltz;
   kleiner in Dunkelgrau: Presse, Texte, Kontakt. Titel ohne Punkt. Link `/#presse` usw. öffnet den Bereich.
