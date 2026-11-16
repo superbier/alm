@@ -1,0 +1,64 @@
+---
+// Vorschau-Seite für die Wahl der Überschriften-Schrift. Nach der Entscheidung löschen.
+import '@fontsource-variable/inter-tight';
+import fonts from '../data/fonts.json';
+
+const families = fonts.filter((f) => f.google).map((f) => 'family=' + f.google.replace(/ /g, '+')).join('&');
+const big = [
+  ['Newsletter', '#ff3b1f'],
+  ['Publikationen', '#ff6a1a'],
+  ['Average', '#ff9a1a'],
+  ['Schmaltz', '#ffc21a'],
+];
+const small = ['Presse', 'Texte', 'Kontakt'];
+---
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Schriften für Überschriften – alm.net</title>
+    <link rel="stylesheet" href={`https://fonts.googleapis.com/css2?${families}&display=swap`} />
+    <style>
+      body { margin: 0; background: #000; color: #f2f2f2; font-family: 'Inter Tight Variable', sans-serif; }
+      .wrap { max-width: 1280px; margin: 0 auto; padding: 40px clamp(20px, 5vw, 64px) 80px; }
+      h1 { font-size: 15px; font-weight: 700; color: #ffc21a; margin: 0 0 8px; letter-spacing: 0.02em; text-transform: uppercase; }
+      .intro { font-size: 18px; color: #b5b5b5; max-width: 62ch; line-height: 1.5; margin: 0 0 40px; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr)); gap: 20px; }
+      .card { background: #0d0d0d; border: 1px solid #262626; padding: 28px 28px 24px; display: flex; flex-direction: column; overflow: hidden; }
+      .meta { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 20px; }
+      .num { color: #6e6e6e; font-size: 14px; font-weight: 700; }
+      .fname { color: #fff; font-size: 16px; font-weight: 700; }
+      .name { color: #fff; font-size: 44px; line-height: 1; margin: 0 0 16px; }
+      .big { display: block; font-size: 36px; line-height: 1.1; white-space: nowrap; }
+      .small { display: block; font-size: 22px; line-height: 1.25; color: #6e6e6e; }
+      .smalls { margin-top: 10px; }
+      .note { margin: 20px 0 16px; font-size: 15px; line-height: 1.5; color: #b5b5b5; }
+      .go { margin-top: auto; align-self: flex-start; display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1.5px solid #ff9a1a; color: #ff9a1a; font-weight: 700; font-size: 15px; text-decoration: none; }
+      .go:hover { background: #ff9a1a; color: #000; }
+      .current { border-color: #ff3b1f; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Schriften für die Überschriften</h1>
+      <p class="intro">Neun Kandidaten im jeweils fettesten Schnitt, in deinen Farben. Der Fließtext bleibt Inter Tight. Mit „Auf der Seite ansehen“ siehst du die echte Startseite (und beim Weiterklicken auch Über Alm) in dieser Schrift.</p>
+      <div class="grid">
+        {fonts.map((f, i) => {
+          const st = `font-family: ${f.family}; font-weight: ${f.weight}; letter-spacing: ${f.tracking}; font-stretch: ${f.stretch};`;
+          return (
+            <section class={`card ${f.id === 'inter' ? 'current' : ''}`}>
+              <div class="meta"><span class="fname">{f.name}</span><span class="num">{i + 1}</span></div>
+              <p class="name" style={st}>Niko Alm</p>
+              {big.map(([w, c]) => <span class="big" style={`${st} color: ${c};`}>{w}</span>)}
+              <div class="smalls">{small.map((w) => <span class="small" style={st}>{w}</span>)}</div>
+              <p class="note">{f.note}</p>
+              <a class="go" href={`/?font=${f.id}`}>Auf der Seite ansehen →</a>
+            </section>
+          );
+        })}
+      </div>
+    </div>
+  </body>
+</html>
