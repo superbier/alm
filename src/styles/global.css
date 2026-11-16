@@ -17,6 +17,7 @@
   --font: 'Inter Tight Variable', 'Inter Tight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-head: var(--font);   /* Schrift der Überschriften */
   --stretch-head: normal;
+  --case-head: uppercase;   /* Überschriften in Versalien; 'none' = normal */
   --heavy: 900;   /* Überschriften */
   --tight: -0.03em;   /* Zeichenabstand der Überschriften */
 
@@ -188,5 +189,5 @@ a.row:hover .row__title { color: var(--amber); }
 
 /* Alle großen Überschriften nutzen die Überschriften-Schrift */
 .fold__head, .hero__name, .sub__title, .sub__kicker, .essay__title, .book__title, .page h1 {
-  font-family: var(--font-head); font-stretch: var(--stretch-head);
+  font-family: var(--font-head); font-stretch: var(--stretch-head); text-transform: var(--case-head);
 }

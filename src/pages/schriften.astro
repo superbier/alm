@@ -43,10 +43,10 @@ const small = ['Presse', 'Texte', 'Kontakt'];
   <body>
     <div class="wrap">
       <h1>Schriften für die Überschriften</h1>
-      <p class="intro">Neun Kandidaten im jeweils fettesten Schnitt, in deinen Farben. Der Fließtext bleibt Inter Tight. Mit „Auf der Seite ansehen“ siehst du die echte Startseite (und beim Weiterklicken auch Über Alm) in dieser Schrift.</p>
+      <p class="intro">Neun Kandidaten im jeweils fettesten Schnitt, in Versalien und in deinen Farben. Der Fließtext bleibt Inter Tight. Mit „Auf der Seite ansehen“ siehst du die echte Startseite (und beim Weiterklicken auch Über Alm) in dieser Schrift.</p>
       <div class="grid">
         {fonts.map((f, i) => {
-          const st = `font-family: ${f.family}; font-weight: ${f.weight}; letter-spacing: ${f.tracking}; font-stretch: ${f.stretch};`;
+          const st = `font-family: ${f.family}; font-weight: ${f.weight}; letter-spacing: ${f.tracking}; font-stretch: ${f.stretch}; text-transform: uppercase;`;
           return (
             <section class={`card ${f.id === 'inter' ? 'current' : ''}`}>
               <div class="meta"><span class="fname">{f.name}</span><span class="num">{i + 1}</span></div>
